@@ -1,0 +1,243 @@
+:root{
+    --yasil: #53d153;
+}
+* {
+    box-sizing: border-box;
+}
+
+.textag {
+    color: white;
+}
+.textgreen{
+    color: #207b20;
+}
+
+header {
+    background: url(../img/bg.png) center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    padding-bottom: 20px;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+    color: rgb(201, 198, 198);
+  
+}
+.menu li a:hover {
+    text-decoration: overline 10px var(--yasil);
+    color: white;
+  
+}
+
+#active{
+    text-decoration: overline 10px var(--yasil);
+    color: white;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.title button {
+    text-transform: uppercase;
+    margin: 40px 0px;
+    padding: 10px 20px;
+    background-color: var(--yasil);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: "Proxima Nova";
+}
+
+.scroll {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0px;
+    font-size: 22px;
+}
+#search{
+    display: flex;
+
+  padding-bottom: 20px;
+
+}
+#search input{
+    border: none;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 1em 0 0 1em;
+    outline: none;
+}
+input::placeholder{
+    color: black;
+    padding: 5px;
+}
+#search button{
+    border: none;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 0px 20px 20px 0px;
+    padding: 5px 8px;
+}
+#search button img{
+    height: 17px;
+}
+main{
+    text-align: center
+}
+h2{
+    font-size: 20px;
+letter-spacing: 4px;
+color: #828181;
+font-weight: 300;
+font-family: "Montserrat";
+padding-top: 50px;
+text-transform: uppercase;
+}
+h3{
+    padding: 20px 0px 0px 0px;
+}
+
+hr{
+    width: 50px;
+}
+#whattext{
+    font-size: 16px;
+color: #b7b3b3;
+font-family: "Myriad Pro";
+padding: 10px 0px 20px 0px;
+
+}
+article p{
+    padding: 10px 20px;
+}
+article a{
+    background-color: var(--yasil);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    
+}
+#last{
+    padding-bottom: 50px;
+}
+i{
+    color: var(--yasil);
+    font-size: 50px;
+    background-color: #e0f3e0;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px 0px 0px 0px;
+}
+#ourlastwork{
+    min-height: 100vh;
+    background-color: var(--yasil);
+}
+.btn3{
+    display: flex;
+   justify-content: center;
+   padding: 70px 0px 0px 0px;
+}
+.btn3 button{
+    padding: 5px 10px;
+    background-color: white;
+    color:#2b9b2b;
+    font-size: 16px;
+font-family: "Proxima Nova";
+border: 1px solid green;
+
+}
+.btn3 button:first-child{
+    border-radius: 1em 0 0em 1em;
+}
+.btn3 button:last-child{
+    border-radius: 0em 1em 1em 0em;
+}
+.btn3 button:hover,.btn3 button.active {
+    background-color: #2b9b2b;
+    color: white;
+}
+.gallery{
+    padding: 70px 0px;
+}
+.gallery img{
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
+    padding: .5em 1em;
+}
+.btn a{
+    font-size: 18px;
+font-family: "Proxima Nova";
+display: inline-block;
+background-color:#2b9b2b;
+border-radius: 50px;
+padding: 15px 10px;
+}
+@media only screen and (min-width:560px) {
+    .gallery img{
+        box-sizing: content-box;
+        width: 40vw;
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    h1 {
+        font-size: 3.4em;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0px 0px 10px;
+    }
+
+    .menu {
+        display: flex;
+        order: -1;
+    }
+
+    .menu li a {
+        display: inline-block;
+        padding: 0px 20px 0px 0px;
+
+
+    }
+    .container{
+        max-width: 1088px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .gallery{
+        max-width: 980px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .gallery img {
+        box-sizing: content-box;
+        width: 160px;
+        height: 160px;
+    }
+
+}
