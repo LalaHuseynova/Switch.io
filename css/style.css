@@ -4,14 +4,18 @@
 * {
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .textag {
     color: white;
 }
 .textgreen{
     color: #207b20;
 }
-
+.bggreen{
+    background-color: #207b20;
+}
 header {
     background: url(../img/bg.png) center/cover;
     min-height: 100vh;
@@ -24,7 +28,6 @@ header {
 .logo {
     padding-bottom: 20px;
 }
-
 .menu li a {
     display: inline-block;
     padding: 5px 0px;
@@ -100,12 +103,12 @@ main{
 }
 h2{
     font-size: 20px;
-letter-spacing: 4px;
-color: #828181;
-font-weight: 300;
-font-family: "Montserrat";
-padding-top: 50px;
-text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #828181;
+    font-weight: 300;
+    font-family: "Montserrat";
+    padding-top: 50px;
+    text-transform: uppercase;
 }
 h3{
     padding: 20px 0px 0px 0px;
@@ -116,9 +119,9 @@ hr{
 }
 #whattext{
     font-size: 16px;
-color: #b7b3b3;
-font-family: "Myriad Pro";
-padding: 10px 0px 20px 0px;
+    color: #b7b3b3;
+    font-family: "Myriad Pro";
+    padding: 10px 10px 20px 10px;
 
 }
 article p{
@@ -156,8 +159,8 @@ i{
     background-color: white;
     color:#2b9b2b;
     font-size: 16px;
-font-family: "Proxima Nova";
-border: 1px solid green;
+    font-family: "Proxima Nova";
+    border: 1px solid green;
 
 }
 .btn3 button:first-child{
@@ -177,7 +180,7 @@ border: 1px solid green;
     width: 100%;
     object-fit: cover;
     height: 30vh;
-    padding: .5em 1em;
+    padding: .5em .5em;
 }
 .btn a{
     font-size: 18px;
@@ -186,6 +189,157 @@ display: inline-block;
 background-color:#2b9b2b;
 border-radius: 50px;
 padding: 15px 10px;
+}
+#testim{
+    min-height: 50vh;
+    text-align: center;
+}
+.profile{
+    padding: 30px 20px;
+}
+.man{display: flex;
+align-items: center;
+justify-content: center;}
+
+.man img{
+    width: 50%;
+    border-radius: 100%;
+    padding: 20px 10px;
+    object-fit: cover;
+}
+
+#quote,.man h5{
+    font: 1em "Proxima Nova";
+color: #444444;
+
+}
+.man h6{
+    font:bold 1em "Proxima Nova";
+color: #cccccc;
+
+}
+#client{
+    background-color:#f2f1f1;
+    min-height: 70vh;
+}
+.ads img{
+    width: 60%;
+    object-fit: cover;
+    padding: 1em 2em;
+    margin: 10px 0;
+}
+ #team{
+    background-color: var(--yasil);
+    min-height: 70vh;
+ }
+ #team p{
+    padding: 10px 0 10px 0;
+ }
+ #below{
+    height: 50px;
+    width: 0px;
+    border: 1px solid green;
+ 
+ }
+ #team article{
+    padding: 30px 0;
+ }
+ #team img{
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+ h4{
+    padding: 0px 0 10px 0;
+    font: 16px "Proxima Nova";
+
+ }
+ #team a{
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255,.5);
+    
+ }
+ .workwith{
+background-color: #3eba3e;
+}
+.workwith button{
+    text-transform: uppercase;
+    margin: 40px 0px;
+    padding: 10px 20px;
+    background-color: var(--yasil);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, .3);
+    font-size: 22px;
+    font-family: "Proxima Nova";
+    
+}
+footer{
+    min-height: 50vh;
+    background-color: #333;
+    font-family: "Poppins";
+    text-align: center;
+}
+footer p{
+    font-size: 16px;
+color: #cccccc;
+font-weight: 300;
+font-family: "Montserrat";
+}
+footer span{
+    font-size: 12px;
+color: #ffffff;
+font-weight: 300;
+font-family: "Montserrat";
+padding: 5px 10px;
+border-radius: 5px;
+}
+.aboutus{
+    padding: 20px 10px;
+}
+footer h4{
+    padding: 0;
+}
+.contact2 a{
+    padding: 20px 5px;
+}
+.post{
+    padding: 20px 0;
+}
+.post p{
+    padding: 10px 0 10px 0;
+}
+.yasil{background-color: #53d153;}
+.sari{background-color: #ffba00;}
+.mavi{background-color: #089cea;}
+.qirmizi{background-color: #f34c03;}
+.contactus{
+    padding: 30px 10px;
+}
+.contactus ul li{
+    padding: 5px 0;
+}
+.contactus form{
+padding: 30px 0 0 0;
+}
+.contactus form input,#message{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+}
+#message{
+    padding: 25px 0;
+}
+.color{ background-color: #444;}
+.color::placeholder{
+    color: #777; 
+    padding: 0px 10px; 
 }
 @media only screen and (min-width:560px) {
     .gallery img{
@@ -199,7 +353,10 @@ padding: 15px 10px;
     h1 {
         font-size: 3.4em;
     }
-
+    .logo img{
+        transform: translateX(-100%);
+    }
+    
     nav {
         display: flex;
         justify-content: space-between;
@@ -218,8 +375,8 @@ padding: 15px 10px;
 
 
     }
-    .container{
-        max-width: 1088px;
+    .contain{
+        max-width: 1080px;
         margin: auto;
     }
     .row{
@@ -239,5 +396,66 @@ padding: 15px 10px;
         width: 160px;
         height: 160px;
     }
+    .man img{
+        width: 100px;
+        
+    }
+    #quote{
+        padding: 0px 200px;
+    }
+/* 
+    MARKALAR */
+    .ads{
+        max-width: 2000px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .ads img{
+        box-sizing: content-box;
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
+    }
+    /*  */
 
+    #team img{
+        height: 125px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+     }
+     #team .row {
+        padding: 50px 0;
+     }
+     footer{
+        display: flex;
+     }
+     .recentposts,.contactus{    padding: 20px 10px;     }
+     .aboutus{
+        width: 33.3%;
+    }
+    .aboutus p{
+        padding: 20px 0;
+        line-height: 23px;
+    }
+    .recentposts{
+        width: 33.3%;
+    }
+    .post{display: flex;
+    
+    }
+    .extra{
+        align-self: flex-start;
+        text-align: initial;
+        padding: 0px 0px 0 10px;
+    }
+    .post{
+    justify-content: center;}
+    .post img{
+        width: 60px;
+    
+    }
 }
